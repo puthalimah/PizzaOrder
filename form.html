@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="thankyou.html">
+    <h1 style="font-size: 25px;">Black Goose Bistro / Pizza on Demand</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <fieldset>
+        <legend>Your Information</legend>
+
+        <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" type="text" name="customername">
+        </div>
+
+        <div>
+            <label for="input-address">Address:</label>
+            <input id="input-address" type="text" name="address">
+        </div>
+
+        <div>
+            <label for="input-telephone-number">Telephone Number:</label>
+            <input id="input-telepone-number" type="text" name="telephone">
+        </div>
+
+        <div>
+            <label for="input-email">Email:</label>
+            <input id="input-email" type="email" name="email">
+        </div>
+
+        <div>
+            <label for="input-delivery-instruction">Delivery Instruction</label>
+            <br>
+            <textarea name="instruction" id="input-delivery-instruction" cols="30" rows="10"></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Design Your Dream Pizza</b></legend>
+        <p>Pizza Specs</p>
+
+        <fieldset>
+            <legend>Crust(Choose one):</legend>
+
+            <div>
+                <input id="classic-white" type="radio" name="crust" value="Classic White">
+                <label for="classic-white">Classic White</label>
+            </div>
+            <div>
+                <input id="multigrain" type="radio" name="crust" value="Multigrain">
+                <label for="multigrain">Multigrain</label>
+            </div>
+            <div>
+                <input id="cheese-cstuffed-crust" type="radio" name="crust" value="Cheese-stuffed Crust">
+                <label for="cheese-stuffed-cruat">Cheese-stuffed Crust</label>
+            </div>
+            <div>
+                <input id="gluten-free" type="radio" name="crust" value="Gluten-free">
+                <label for="gluten-free">Gluten-free</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Toppings (Choose as many as you want):</legend>
+
+            <div>
+                <input id="red-sauce" type="checkbox" name="toppings[]" value="Red Sauce" checked>
+                <label for="red-sauce">Red Sauce</label>
+            </div>
+            <div>
+                <input id="white-sauce" type="checkbox" name="toppings[]" value="White Sauce">
+                <label for="white-sauce">White Sauce</label>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <input type="submit">
+    </form>
+</body>
+</html>
